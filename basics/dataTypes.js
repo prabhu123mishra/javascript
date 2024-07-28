@@ -35,5 +35,60 @@ console.log(null == 0);         // false
 console.log(undefined == 0);    // false
 
 
+//primitive
+//7 types : string,number,null,undefined,symbol,boolean,BigInt
+
+const id=symbol('123')
+const anotherId=symbol('123')
+
+console.log(id==anotherId); //false
+
+const bignumber = 7864648656586n;
+
+
+//reference(non primitive)
+//arrays,objects,functions
+
+const heros = ["shaktiman","hatim","tamrajkilwis"]
+
+let myObj = {
+       
+      name : "prabhuu",
+      age : 23,
+}
+
+const myFunction = function(){
+      console.log("hello world");
+}
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack(primitive)
+
+let mychannel1="hjhjhdb"
+let mychannel2=mychannel1;
+
+mychannel2 = "chaiorcode"
+console.log(mychannel1)    //hjhjhdb
+console.log(mychannel2)   //chaiorcode
+//heap(non-primitive)
+
+let userOne = {
+      email : "ghhuah@gmail.com",
+      upi : "ahu@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "ram@gmail.com"
+
+console.log(userOne.email)  //ram@gmail.com
+console.log(userTwo.email)  //ram@gmail.com
+
+
+
+
+
+
 
 
