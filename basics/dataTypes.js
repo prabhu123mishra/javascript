@@ -1,7 +1,7 @@
 "use strict"; //treat all JS code as newer version
 
-console.log(typeof null);  // type of null is object
-console.log(typeof undefined); //type of undefined is undefined
+//console.log(typeof null);  // type of null is object
+//console.log(typeof undefined); //type of undefined is undefined
 
 
 // null => standlone value
@@ -13,12 +13,12 @@ console.log(typeof undefined); //type of undefined is undefined
 //null is explicitly set by the programmer.
 //undefined is used by JavaScript when a variable is declared but not assigned a value.
 
-let x = null;
-console.log(x); // null
+// let x = null;
+// console.log(x); // null
 
-console.log(null == undefined); // true
+//console.log(null == undefined); // true
 
-console.log(null === undefined); // false
+//console.log(null === undefined); // false
 //Strict Equality (===)
 /*The strict equality operator (===) checks for both value and type without performing type coercion. 
 This means the values must be of the same type and value to be considered equal.
@@ -30,60 +30,93 @@ When using ==, JavaScript performs type coercion, meaning it converts the values
 
 */
 
-console.log(null == undefined); // true
-console.log(null == 0);         // false
-console.log(undefined == 0);    // false
+//console.log(null == undefined); // true
+//console.log(null == 0);         // false
+//console.log(undefined == 0);    // false
 
 
 //primitive
 //7 types : string,number,null,undefined,symbol,boolean,BigInt
 
-const id=symbol('123')
-const anotherId=symbol('123')
+// const id=symbol('123')
+// const anotherId=symbol('123')
 
-console.log(id==anotherId); //false
+// console.log(id==anotherId); //false
 
-const bignumber = 7864648656586n;
+// const bignumber = 7864648656586n;
 
 
 //reference(non primitive)
 //arrays,objects,functions
 
-const heros = ["shaktiman","hatim","tamrajkilwis"]
+// const heros = ["shaktiman","hatim","tamrajkilwis"]
 
-let myObj = {
+// let myObj = {
        
-      name : "prabhuu",
-      age : 23,
-}
+//       name : "prabhuu",
+//       age : 23,
+// }
 
-const myFunction = function(){
-      console.log("hello world");
-}
+// const myFunction = function(){
+//       console.log("hello world");
+// }
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //stack(primitive)
 
-let mychannel1="hjhjhdb"
-let mychannel2=mychannel1;
+// let mychannel1="hjhjhdb"
+// let mychannel2=mychannel1;
 
-mychannel2 = "chaiorcode"
-console.log(mychannel1)    //hjhjhdb
-console.log(mychannel2)   //chaiorcode
+//mychannel2 = "chaiorcode"
+//console.log(mychannel1)    //hjhjhdb
+//console.log(mychannel2)   //chaiorcode
 //heap(non-primitive)
 
-let userOne = {
-      email : "ghhuah@gmail.com",
-      upi : "ahu@ybl"
-}
+// let userOne = {
+//       email : "ghhuah@gmail.com",
+//       upi : "ahu@ybl"
+// }
 
-let userTwo = userOne
-userTwo.email = "ram@gmail.com"
+// let userTwo = userOne
+// userTwo.email = "ram@gmail.com"
 
-console.log(userOne.email)  //ram@gmail.com
-console.log(userTwo.email)  //ram@gmail.com
+//console.log(userOne.email)  //ram@gmail.com
+//console.log(userTwo.email)  //ram@gmail.com
+
+//+++++++++++++++++++++++++++++++++++++++++++string++++++++++++++++++++++
+
+const name = "prabhuu--mishra"
+const repoCount=8
+
+//console.log(`i am ${name} and my repo count is ${repoCount}` )
+
+const gameName = new String('prabhu-mishra-manshi-mishra')
+// console.log(gameName[2]);
+// console.log(gameName.__proto__);
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+// console.log(gameName.charAt(2));
+
+const newName = gameName.substring(0,5);
+// console.log(newName);
+const newString = gameName.slice(2,5);
+// console.log(newString);
+
+const newSringOne= "   prabhu..  "
+// console.log(newSringOne)
+// console.log(newSringOne.trim());
+
+const url = "https://prabhuu.com%20prabhu"
+console.log(url.replace('%20','+'))
+
+console.log(url.includes('prabhk'))
+console.log(gameName.split('-'))
+
+
+
+
 
 
 
