@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Radha | krishna </title>
+</head>
+<body style="background-color: #212121;color: #f1f1f1;">
+    <div class="parent" >
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+    
+</body>
+
+ <script>
+      const parent = document.querySelector('.parent')
+      console.log(parent);
+      console.log(parent.children);
+      console.log(parent.children.innerHTNL);
+
+      for(let i=0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerHTNL);
+      }
+      console.log("NODES:",parent.childNodes);
+
+      const div1 = document.createElement('div')
+      console.log(div1);
+      div1.className = "main"
+      div1.id = "myId"
+      div1.id = Math.round(Math.random()*10 +1);
+      div1.setAttribute("title","generated title");
+      div1.style.backgroundColor="green"
+      //div1.innerText=" radha and krishna"
+        //or
+      const addText = document.createTextNode("radha and krishna")
+      div1.appendChild(addText)
+      document.body.appendChild(div1)
+
+ </script>
+</html>
